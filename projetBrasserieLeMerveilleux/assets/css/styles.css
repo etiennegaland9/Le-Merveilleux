@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #222;
+  font-size: 62.5%;
+  line-height: 1.4;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/background/lavandes1.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1em;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  max-width: 7%;
+}
+header h1 {
+  font-family: "Merienda One";
+  font-size: 4rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+}
+header a:hover {
+  color: #a650fd;
+}
+header .active {
+  font-weight: bolder;
+  background-color: #a650fd;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+main {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.accueil1,
+.accueil2,
+.accueil3,
+.accueil4 {
+  font-family: "Courgette", cursive;
+  font-size: 2.8rem;
+  color: white;
+  background-color: rgba(100, 100, 100, 0.7);
+  line-height: 4rem;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+}
+.accueil2 a {
+  text-decoration: none;
+  color: #a673da;
+  text-shadow: 2px 2px 4px black;
+  font-weight: bold;
+}
+.accueil2 a:hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem 1rem;
+  background-color: rgba(100, 100, 100, 0.7);
+  color: white;
+  font-size: 2.3rem;
+}
+footer div {
+  width: 80%;
+}
+footer a {
+  text-align: center;
+  color: inherit;
+}
+footer a:hover {
+  color: red;
+}
+footer .networks {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer img {
+  height: 33px;
+}
+
+/* page carte */
+.carte {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+.carte h2 {
+  margin: 2rem;
+}
+.first {
+  font-weight: bolder;
+}
+.carte li {
+  list-style: none;
+}
+.carteGastro,
+.carteBistro,
+.carteAstro,
+.carteAlcoolo,
+.carteSoft {
+  width: 75%;
+  margin: auto;
+  padding: 0rem;
+  background-color: wheat;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.contenu {
+  display: flex;
+  justify-content: space-between;
+}
+.labels {
+  text-align: left;
+  margin-left: 2rem;
+}
+.labels li ul {
+  margin-left: 2rem;
+}
+.prices {
+  margin-right: 1rem;
+}
+.amount {
+  display: flex;
+}
+
+/* page galerie */
+.galerie ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.galerie li {
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.galerie img {
+  max-width: 330px;
+  margin: 1rem;
+}
+
+/* page contact : */
+.contactForm {
+  font-family: "Times New Roman", Times, serif;
+  background: rgba(250, 235, 215, 0.9);
+  border-radius: 10px;
+  color: darkslategray;
+  padding-top: 2rem;
+}
+.contactForm h1 {
+  font-family: "Merienda One";
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contactForm h2 {
+  padding: 0.5em;
+  font-size: 2.5rem;
+}
+.contactForm strong:hover {
+  color: red;
+  cursor: pointer;
+}
+form {
+  margin: auto;
+  width: 95%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+form div {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+label {
+  display: flex;
+  width: 50%;
+  text-align: left;
+}
+input,
+textarea {
+  width: 100%;
+  min-height: 2.5rem;
+  font-size: 2.3rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+input.error + span {
+  color: red;
+}
+input.error {
+  background-color: orange;
+}
+.valider {
+  width: auto;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+/* page A-propos */
+.Apropos {
+  width: 80%;
+  margin: auto;
+  font-family: "Courgette", cursive;
+  font-size: 2.8rem;
+  text-align: justify;
+}
+.Apropos h1,
+.Apropos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.Apropos a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.Apropos a:hover {
+  color: #a673da;
+}
+.Marketing,
+.Legal {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.Open {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.Open li {
+  list-style: none;
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media (min-width: 1024px) {
+  main {
+    width: 100%;
+  }
+  .accueil1,
+  .accueil2,
+  .accueil3,
+  .accueil4 {
+    position: absolute;
+    font-size: 2.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    box-shadow: 10px 15px 15px rgba(100, 100, 100, 0.7);
+  }
+  .accueil1 {
+    top: 28%;
+    left: 10%;
+  }
+  .accueil2 {
+    top: 50%;
+    left: 5%;
+  }
+  .accueil3 {
+    top: 75%;
+    right: 2%;
+  }
+  .accueil4 {
+    bottom: 10%;
+    right: 15%;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* page carte */
+  .carte {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .carteGastro,
+  .carteBistro,
+  .carteAstro,
+  .carteAlcoolo,
+  .carteSoft {
+    width: 45%;
+  }
+
+  /* page galerie */
+  .galerie li {
+    max-width: 19%;
+  }
+
+  /* page contact : */
+  .contactForm {
+    width: 55%;
+    margin: auto;
+    font-family: "Times New Roman", Times, serif;
+    background: rgba(250, 235, 215, 0.9);
+    border-radius: 10px;
+    color: darkslategray;
+    padding-bottom: 1em;
+  }
+  .contactForm h1 {
+    font-family: "Merienda One";
+    margin-top: 1rem;
+  }
+  .contactForm h2 {
+    padding: 0.5em;
+  }
+  form {
+    margin: auto;
+    width: 95%;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+
+  /* page A-propos */
+  .Apropos {
+    width: 60%;
+  }
+  .Marketing,
+  .Legal {
+    padding: 5rem;
+  }
+}

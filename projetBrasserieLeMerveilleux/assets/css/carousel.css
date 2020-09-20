@@ -1,0 +1,54 @@
+.slideshow {
+  width: 476px;
+  height: 357px;
+  margin: 50px auto;
+  box-shadow: 5px 5px 15px 5px rgb(153, 152, 152);
+  background-image: url(./diapo/Logo_LM.jpg);
+  background-size: contain;
+  animation: fondu 60s ease-in-out infinite both;
+}
+@keyframes fondu{
+  0%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/Logo_LM.jpg);}
+  2%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/Logo_LM.jpg);}
+  8%{opacity: 1; background-image: url(./diapo/Logo_LM.jpg);}
+  9.99%{opacity: 0; background-image: url(./diapo/Logo_LM.jpg);}
+  10%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/terrasse.jpg);}
+  12%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/terrasse.jpg);}
+  18%{opacity: 1; background-image: url(./diapo/terrasse.jpg);}
+  19.99%{opacity: 0; background-image: url(./diapo/terrasse.jpg);}
+  20%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/gambas.jpg);}
+  22%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/gambas.jpg);}
+  28%{opacity: 1; background-image: url(./diapo/gambas.jpg);}
+  29.99%{opacity: 0; background-image: url(./diapo/gambas.jpg);}
+  30%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/salle.jpg);}
+  32%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/salle.jpg);}
+  38%{opacity: 1; background-image: url(./diapo/salle.jpg);}
+  39.99%{opacity: 0; background-image: url(./diapo/salle.jpg);}
+  40%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/ratatouille.jpg);}
+  42%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/ratatouille.jpg);}
+  48%{opacity: 1; background-image: url(./diapo/ratatouille.jpg);}
+  49.99%{opacity: 0; background-image: url(./diapo/ratatouille.jpg);}
+  50%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/vigne.jpg);}
+  52%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/vigne.jpg);}
+  58%{opacity: 1; background-image: url(./diapo/vigne.jpg);}
+  59.99%{opacity: 0; background-image: url(./diapo/vigne.jpg);}
+  60%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/canard.jpg);}
+  62%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/canard.jpg);}
+  68%{opacity: 1; background-image: url(./diapo/canard.jpg);}
+  69.99%{opacity: 0; background-image: url(./diapo/canard.jpg);}
+  70%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/cuisine.jpg);}
+  72%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/cuisine.jpg);}
+  78%{opacity: 1; background-image: url(./diapo/cuisine.jpg);}
+  79.99%{opacity: 0; background-image: url(./diapo/cuisine.jpg);}
+  80%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/asperges.jpg);}
+  82%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/asperges.jpg);}
+  88%{opacity: 1; background-image: url(./diapo/asperges.jpg);}
+  89.99%{opacity: 0; background-image: url(./diapo/asperges.jpg);}
+  90%{opacity: 0; animation-timing-function: ease-in; background-image: url(./diapo/notreChef.jpg);}
+  92%{opacity: 1; animation-timing-function: ease-out; background-image: url(./diapo/notreChef.jpg);}
+  98%{opacity: 1; background-image: url(./diapo/notreChef.jpg);}
+  99.99%{opacity: 0; background-image: url(./diapo/notreChef.jpg);}
+}
+.slideshow:hover {
+  animation-play-state: paused;
+}
